@@ -9,12 +9,17 @@ namespace Mvc_DependencyInjection_IoC.Controllers
 {
     public class ProductsController : Controller
     {
-        private IProductRepository productRepository = new ProductRepository();
+        private IProductRepository _productRepository;
+
+        public ProductsController(IProductRepository productRepository)
+        {
+            _productRepository = productRepository;
+        }
 
         // GET: Products
         public ActionResult Index()
         {
-            var products = productRepository.GetAll();
+            var products = _productRepository.GetAll();
             return View(products);
         }
     }
