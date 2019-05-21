@@ -9,7 +9,7 @@ namespace Mvc_DependencyInjection_IoC.Controllers
 {
     public class ProductsController : Controller
     {
-        private IProductRepository _productRepository;
+        private readonly IProductRepository _productRepository;
 
         public ProductsController(IProductRepository productRepository)
         {
