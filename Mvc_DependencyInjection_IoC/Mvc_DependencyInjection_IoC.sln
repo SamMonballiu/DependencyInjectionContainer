@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc_DependencyInjection_IoC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc_DependencyInjection_IoC.Data", "Mvc_DependencyInjection_IoC.Data\Mvc_DependencyInjection_IoC.Data.csproj", "{BAE2BA39-23F4-44FD-990C-1921894F45C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc_DependencyInjection_IoC.Data.EF", "Mvc_DependencyInjection_IoC.Data.EF\Mvc_DependencyInjection_IoC.Data.EF.csproj", "{99FBCE11-E262-4FD8-BA03-D1A778038A93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc_DependencyInjection_Ioc.DataModels", "Mvc_DependencyInjection_Ioc.DataModels\Mvc_DependencyInjection_Ioc.DataModels.csproj", "{C5931BA8-EBA0-4236-92EC-7FA89416C60C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{BAE2BA39-23F4-44FD-990C-1921894F45C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAE2BA39-23F4-44FD-990C-1921894F45C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAE2BA39-23F4-44FD-990C-1921894F45C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FBCE11-E262-4FD8-BA03-D1A778038A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FBCE11-E262-4FD8-BA03-D1A778038A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FBCE11-E262-4FD8-BA03-D1A778038A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FBCE11-E262-4FD8-BA03-D1A778038A93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5931BA8-EBA0-4236-92EC-7FA89416C60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5931BA8-EBA0-4236-92EC-7FA89416C60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5931BA8-EBA0-4236-92EC-7FA89416C60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5931BA8-EBA0-4236-92EC-7FA89416C60C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

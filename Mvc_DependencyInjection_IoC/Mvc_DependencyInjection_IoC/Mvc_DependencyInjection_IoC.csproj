@@ -48,6 +48,12 @@
     <Reference Include="CommonServiceLocator, Version=2.0.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.5.2.0\lib\net45\CommonServiceLocator.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -221,6 +227,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -240,9 +247,13 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mvc_DependencyInjection_IoC.Data\Mvc_DependencyInjection_IoC.Data.csproj">
-      <Project>{BAE2BA39-23F4-44FD-990C-1921894F45C2}</Project>
-      <Name>Mvc_DependencyInjection_IoC.Data</Name>
+    <ProjectReference Include="..\Mvc_DependencyInjection_IoC.Data.EF\Mvc_DependencyInjection_IoC.Data.EF.csproj">
+      <Project>{99FBCE11-E262-4FD8-BA03-D1A778038A93}</Project>
+      <Name>Mvc_DependencyInjection_IoC.Data.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mvc_DependencyInjection_Ioc.DataModels\Mvc_DependencyInjection_Ioc.DataModels.csproj">
+      <Project>{C5931BA8-EBA0-4236-92EC-7FA89416C60C}</Project>
+      <Name>Mvc_DependencyInjection_Ioc.DataModels</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

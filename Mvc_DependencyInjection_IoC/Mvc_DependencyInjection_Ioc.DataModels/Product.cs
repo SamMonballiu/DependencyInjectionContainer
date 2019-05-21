@@ -1,4 +1,4 @@
-﻿namespace Mvc_DependencyInjection_IoC.Data.Models
+﻿namespace Mvc_DependencyInjection_IoC.DataModels
 {
     public class Product
     {

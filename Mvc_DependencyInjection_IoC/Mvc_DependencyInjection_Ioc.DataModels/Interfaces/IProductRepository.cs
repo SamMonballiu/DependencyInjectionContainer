@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using Mvc_DependencyInjection_IoC.DataModels;
 
-namespace Mvc_DependencyInjection_IoC.Data.Models.Interfaces
+namespace Mvc_DependencyInjection_IoC.DataModels.Interfaces
 {
     public interface IProductRepository
     {

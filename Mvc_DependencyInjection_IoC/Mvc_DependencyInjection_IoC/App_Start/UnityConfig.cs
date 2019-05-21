@@ -1,5 +1,5 @@
-using Mvc_DependencyInjection_IoC.Data.Models.Interfaces;
-using Mvc_DependencyInjection_IoC.Data.Models.Repositories;
+using Mvc_DependencyInjection_IoC.Data.EF.Models.Repositories;
+using Mvc_DependencyInjection_IoC.DataModels.Interfaces;
 using System.Web.Mvc;
 using Unity;
 using Unity.Mvc5;
@@ -14,7 +14,8 @@ namespace Mvc_DependencyInjection_IoC
             
             // e.g. container.RegisterType<ITestService, TestService>();
 
-            container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterType<IProductRepository, ProductRepositoryDb>();
+
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
