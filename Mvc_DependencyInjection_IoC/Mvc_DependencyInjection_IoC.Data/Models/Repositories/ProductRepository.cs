@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Mvc_DependencyInjection_IoC.Data.Models.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
-namespace Mvc_DependencyInjection_IoC.Models
+namespace Mvc_DependencyInjection_IoC.Data.Models.Repositories
 {
     public class ProductRepository : IProductRepository
     {

@@ -1,4 +1,4 @@
-﻿using Mvc_DependencyInjection_IoC.Models;
+﻿using Mvc_DependencyInjection_IoC.Data.Models.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

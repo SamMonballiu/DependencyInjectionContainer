@@ -1,5 +1,5 @@
-using Mvc_DependencyInjection_IoC.Models;
-using System.Diagnostics;
+using Mvc_DependencyInjection_IoC.Data.Models.Interfaces;
+using Mvc_DependencyInjection_IoC.Data.Models.Repositories;
 using System.Web.Mvc;
 using Unity;
 using Unity.Mvc5;
