@@ -1,5 +1,5 @@
-﻿using Mvc_DependencyInjection_IoC.Data.Models.Interfaces;
-using Mvc_DependencyInjection_IoC.DataModels;
+﻿using Mvc_DependencyInjection_IoC.DataModels;
+using Mvc_DependencyInjection_IoC.DataModels.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,33 +8,39 @@ namespace Mvc_DependencyInjection_IoC.Data.Models.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        private List<Product> products = new List<Product>();
+        private static List<Product> products = new List<Product>();
+        private static bool firstLoad = true;
 
         public ProductRepository()
         {
-            products.Add(new Product()
+            if (firstLoad)
             {
-                Id = 1,
-                Name = "TV",
-                Category = "Electronics",
-                Price = 599.99M
-            });
+                products.Add(new Product()
+                {
+                    Id = 1,
+                    Name = "TV",
+                    Category = "Electronics",
+                    Price = 599.99M
+                });
 
-            products.Add(new Product()
-            {
-                Id = 2,
-                Name = "Telephone",
-                Category = "Electronics",
-                Price = 199.99M
-            });
+                products.Add(new Product()
+                {
+                    Id = 2,
+                    Name = "Telephone",
+                    Category = "Electronics",
+                    Price = 199.99M
+                });
 
-            products.Add(new Product()
-            {
-                Id = 3,
-                Name = "Desktop PC",
-                Category = "Electronics",
-                Price = 1099.99M
-            });
+                products.Add(new Product()
+                {
+                    Id = 3,
+                    Name = "Desktop PC",
+                    Category = "Electronics",
+                    Price = 1099.99M
+                });
+
+                firstLoad = false;
+            }
 
         }
 

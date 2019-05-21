@@ -1,6 +1,7 @@
 ﻿using Mvc_DependencyInjection_IoC.DataModels;
 using Mvc_DependencyInjection_IoC.DataModels.Interfaces;
 using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace Mvc_DependencyInjection_IoC.Data.EF.Models.Repositories
 {
@@ -47,7 +48,10 @@ namespace Mvc_DependencyInjection_IoC.Data.EF.Models.Repositories
                 return false;
             }
 
-            currentProduct = item;
+            currentProduct.Name = item.Name;
+            currentProduct.Category = item.Category;
+            currentProduct.Price = item.Price;
+            context.Entry(currentProduct).State = EntityState.Modified;
             context.SaveChanges();
             return true;
         }
